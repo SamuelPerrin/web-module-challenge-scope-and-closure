@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  In Javascript, a closure combines a function with the variables that are accessible to it (viz., those that are either in the global scope or in the scope of any of the function's parent functions).
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  Closure is used in the anonymous function that is returned by personalDice.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+
+  The string logged every time `dansRoll` is invoked will be the same, except for the value of `newRoll`, which will be a random number between 0 and 5, inclusive.
+
+c. What is the lexical scope of `newRoll`?
+
+  `newRoll` can be accessed from inside any function that is returned by `personalDice`, such as those stored in `dansRoll` and `zoesRoll`.
 
 
 ### Task 3 - Stretch Goals

@@ -87,7 +87,7 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(inningScore,numInnings){
+function finalScore (inningScore, numInnings) {
   let away = 0;
   let home = 0;
   for (let i = 0; i < numInnings; i++) {
@@ -102,7 +102,7 @@ Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(inningScore) {
+function getInningScore (inningScore) {
   return {Away:inningScore(), Home:inningScore()}
 }
 
@@ -148,7 +148,7 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(getInningScore,inning,numInnings) {
+function scoreboard (getInningScore, inning, numInnings) {
   const scoreboard = [];
   let away = 0;
   let home = 0;
